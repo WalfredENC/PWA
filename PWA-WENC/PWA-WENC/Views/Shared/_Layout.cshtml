@@ -6,12 +6,13 @@
     <title>@ViewData["Title"] - PWA_WENC</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/menu.css" asp-append-version="true" />
+    
 </head>
 <body>
     <header class="header">
 	    <div class="container">
 		    <nav class="navbar">
-			    <h1><a href="/" class="brand">Brand</a></h1>
+			    <h1><a href="/" class="brand">BIBLIOTECA MANUEL SÁENZ</a></h1>
 			    <button type="button" class="burger" id="burger">
 				    <span class="burger-line"></span>
 				    <span class="burger-line"></span>
@@ -20,12 +21,10 @@
 			    <span class="overlay" id="overlay"></span>
 			    <div class="menu" id="menu">
 				    <ul class="menu-block">
-					    <li class="menu-item"><a class="menu-link" href="#">Pagina 1</a></li>
-					    <li class="menu-item"><a class="menu-link" href="#">Pagina 2</a></li>
-					    <li class="menu-item"><a class="menu-link" href="#">Pagina 3</a></li>
-					    <li class="menu-item"><a class="menu-link" href="#">Pagina 4</a></li>
-					    <li class="menu-item"><a class="menu-link" href="#">Pagina 5</a></li>
-					    <li class="menu-item"><a class="menu-link" href="#">Pagina 6</a></li>
+					    <li class="menu-item"><a class="menu-link" href="#">Inicio</a></li>
+					    <li class="menu-item"><a class="menu-link" href="#">Inventario</a></li>
+					    <li class="menu-item"><a class="menu-link" href="#">Préstamos</a></li>
+
 				    </ul>
 			    </div>
 		    </nav>
@@ -48,6 +47,8 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/menu.js" asp-append-version="true"></script>
+    <script src="~/js/generic.js"></script>
+
     @await RenderSectionAsync("Scripts", required: false)
     <script>
 if (navigator.serviceWorker) {
